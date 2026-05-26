@@ -156,7 +156,7 @@ export default async function HomePage() {
                 </SectionEyebrow>
                 <h3 className="mt-2 text-xl font-bold text-white">{ps.why.videoTitle}</h3>
                 <p className="mt-1.5 text-sm text-slate-400">{ps.why.videoLead}</p>
-                <VideoPlayer src="/video-surconsommation.mp4" cta={ps.why.videoCta} title={ps.why.videoTitle} />
+                <VideoPlayer cta={ps.why.videoCta} title={ps.why.videoTitle} />
               </div>
             </RevealOnView>
 

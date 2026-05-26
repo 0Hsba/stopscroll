@@ -23,7 +23,7 @@ const securityHeaders = [
       "font-src 'self' https://fonts.gstatic.com",
       "img-src 'self' data: blob:",
       "connect-src 'self' https://api.resend.com",
-      "frame-src 'none'",
+      "frame-src https://www.youtube.com",
       "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",
