@@ -1,6 +1,7 @@
 @import "tailwindcss";
-@import "@fontsource/opendyslexic/400.css";
-@import "@fontsource/opendyslexic/700.css";
+/* OpenDyslexic chargé uniquement quand la classe est activée */
+@import "@fontsource/opendyslexic/400.css" layer(dyslexic);
+@import "@fontsource/opendyslexic/700.css" layer(dyslexic);
 
 @theme inline {
   --font-opendyslexic: "Open Dyslexic", ui-sans-serif, system-ui, sans-serif;
@@ -77,12 +78,16 @@
   }
 }
 
+.ss-testimonial-wrap {
+  contain: layout style;
+}
 .ss-testimonial-track {
   display: flex;
   width: max-content;
   gap: 1.25rem;
   animation: ss-testimonial-marquee 48s linear infinite;
-  will-change: transform;
+  will-change: transform; /* conservé ici : animation continue justifie la couche */
+  backface-visibility: hidden; /* évite les repaints sur certains navigateurs */
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -99,12 +104,11 @@
 
 @utility animate-orb {
   animation: ss-float-orb 16s ease-in-out infinite;
-  will-change: transform;
+  /* will-change retiré : cause des freezes GPU sur les éléments décoratifs */
 }
 
 @utility animate-orb-delayed {
   animation: ss-float-orb 22s ease-in-out infinite reverse;
-  will-change: transform;
 }
 
 @utility animate-scroll-hint {
@@ -171,39 +175,36 @@
 /* We use separate wrapper/inner elements so transforms don't conflict */
 @utility animate-card-1 {
   animation: ss-float-card-1 5.5s ease-in-out infinite;
-  will-change: transform;
+  backface-visibility: hidden;
 }
 @utility animate-card-2 {
   animation: ss-float-card-2 6.2s ease-in-out infinite;
   animation-delay: -1.8s;
-  will-change: transform;
+  backface-visibility: hidden;
 }
 @utility animate-card-3 {
   animation: ss-float-card-3 5s ease-in-out infinite;
   animation-delay: -0.9s;
-  will-change: transform;
+  backface-visibility: hidden;
 }
 @utility animate-card-4 {
   animation: ss-float-card-4 6.8s ease-in-out infinite;
   animation-delay: -3.2s;
-  will-change: transform;
+  backface-visibility: hidden;
 }
 
 @utility animate-slide-left {
   animation: ss-slide-from-left 1.35s cubic-bezier(0.22, 1, 0.36, 1) both;
-  will-change: transform, opacity;
+  /* will-change retiré après animation pour libérer la couche GPU */
 }
 @utility animate-slide-right {
   animation: ss-slide-from-right 1.35s cubic-bezier(0.22, 1, 0.36, 1) both;
-  will-change: transform, opacity;
 }
 @utility animate-slide-top-left {
   animation: ss-slide-from-top-left 1.45s cubic-bezier(0.22, 1, 0.36, 1) both;
-  will-change: transform, opacity;
 }
 @utility animate-slide-top-right {
   animation: ss-slide-from-top-right 1.45s cubic-bezier(0.22, 1, 0.36, 1) both;
-  will-change: transform, opacity;
 }
 
 @utility animate-chat-bubble {

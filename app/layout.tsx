@@ -6,18 +6,22 @@ import "./globals.css";
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const fredoka = Fredoka({
   variable: "--font-fredoka",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
+  preload: true,
 });
 
 const lilitaOne = Lilita_One({
   variable: "--font-lilita-one",
   subsets: ["latin"],
   weight: "400",
+  display: "swap",
 });
 
 import { ChatbotWidget } from "@/components/chatbot-widget";
@@ -108,6 +112,9 @@ export default async function RootLayout({
       {/* Script synchrone dans <head> : s'exécute avant TOUT le reste, avant que
           le navigateur restaure la position de scroll. C'est le seul endroit fiable. */}
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.youtube.com" />
         <script
           dangerouslySetInnerHTML={{
             __html: `

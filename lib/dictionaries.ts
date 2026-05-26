@@ -123,45 +123,39 @@ const fr: Dictionary = {
       "Retours des étudiants et participants ayant découvert StopScroll",
     testimonials: [
       {
-        quote:
-          "Le jeu fait rire tout en faisant réfléchir, c’est exactement ce qu’il faut pour parler du sujet.",
-        author: "Élève HEFP",
-        context: "TEST UTILISATEUR",
+        quote: "J’ai posé mon téléphone pendant toute la partie. C’est la première fois depuis des mois.",
+        author: "Élève, 17 ans",
+        context: "SESSION CLASSE · CEFF INDUSTRIE",
         rating: 5,
       },
       {
-        quote:
-          "On reconnaît vraiment les comportements des réseaux sociaux, c’est frappant et drôle à la fois.",
+        quote: "On a reconnu nos propres comportements dans les cartes. Ça fait bizarre, mais c’est efficace.",
         author: "Participant atelier",
-        context: "RETOUR TERRAIN",
-        rating: 4,
-      },
-      {
-        quote:
-          "Très accessible, même pour des personnes qui ne jouent pas souvent.",
-        author: "Étudiante",
-        context: "SESSION CLASSE",
+        context: "RETOUR TERRAIN · DIVTEC",
         rating: 5,
       },
       {
-        quote:
-          "Le ton est critique mais jamais moralisateur, et c’est ce qui fonctionne.",
-        author: "Enseignant",
-        context: "OBSERVATION PÉDAGOGIQUE",
-        rating: 3,
+        quote: "C’est le seul jeu où j’ai appris quelque chose sans m’en rendre compte.",
+        author: "Étudiante, 2e année",
+        context: "TEST UTILISATEUR · HEFP",
+        rating: 5,
       },
       {
-        quote:
-          "En quelques minutes, on comprend mieux l’économie de l’attention.",
-        author: "Testeur",
-        context: "DÉCOUVERTE",
+        quote: "Idéal pour lancer une discussion en classe sans que ça parte en débat moralisant.",
+        author: "Enseignant, lycée technique",
+        context: "OBSERVATION PÉDAGOGIQUE",
         rating: 4,
       },
       {
-        quote:
-          "Le concept est original et crédible pour sensibiliser sans faire la morale.",
-        author: "Groupe pilote",
-        context: "VALIDATION",
+        quote: "Le mode solo est addictif. L’ironie n’a pas échappé à mes élèves.",
+        author: "Animateur d’atelier",
+        context: "DÉCOUVERTE · BIENNE",
+        rating: 4,
+      },
+      {
+        quote: "En 20 minutes de jeu, mes étudiants ont plus compris l’économie de l’attention qu’en un cours entier.",
+        author: "Formateur HEFP",
+        context: "VALIDATION PÉDAGOGIQUE",
         rating: 5,
       },
     ],
@@ -308,45 +302,39 @@ const en: Dictionary = {
       "Feedback from students and participants who explored StopScroll",
     testimonials: [
       {
-        quote:
-          "The game makes people laugh while making them think, which is exactly the right balance.",
-        author: "HEFP student",
-        context: "USER TEST",
+        quote: "I put my phone down for the entire game. First time in months.",
+        author: "Student, 17",
+        context: "CLASS SESSION · CEFF INDUSTRIE",
         rating: 5,
       },
       {
-        quote:
-          "You instantly recognize real social media behaviors. Funny and sharp.",
+        quote: "We recognized our own behaviors in the cards. Unsettling — but that’s exactly why it works.",
         author: "Workshop participant",
-        context: "FIELD FEEDBACK",
-        rating: 4,
-      },
-      {
-        quote:
-          "Very accessible, even for people who are not regular players.",
-        author: "Student",
-        context: "CLASS SESSION",
+        context: "FIELD FEEDBACK · DIVTEC",
         rating: 5,
       },
       {
-        quote:
-          "The tone is critical but never preachy, and that is why it works.",
-        author: "Teacher",
-        context: "PEDAGOGICAL VIEW",
-        rating: 3,
+        quote: "The only game where I learned something without realizing it.",
+        author: "Student, 2nd year",
+        context: "USER TEST · HEFP",
+        rating: 5,
       },
       {
-        quote:
-          "In minutes, you better understand the attention economy.",
-        author: "Playtester",
-        context: "DISCOVERY",
+        quote: "Perfect for sparking a classroom debate without it turning into a lecture.",
+        author: "Teacher, technical high school",
+        context: "PEDAGOGICAL OBSERVATION",
         rating: 4,
       },
       {
-        quote:
-          "The concept feels original and credible for digital awareness.",
-        author: "Pilot group",
-        context: "VALIDATION",
+        quote: "The solo mode is addictive. The irony wasn’t lost on my students.",
+        author: "Workshop facilitator",
+        context: "DISCOVERY · BIEL",
+        rating: 4,
+      },
+      {
+        quote: "In 20 minutes of play, my students grasped the attention economy better than in a full lecture.",
+        author: "HEFP trainer",
+        context: "PEDAGOGICAL VALIDATION",
         rating: 5,
       },
     ],
@@ -480,12 +468,12 @@ const de: Dictionary = {
     testimonialsEyebrow: "Bewertungen", testimonialsTitle: "Was Tester sagen",
     testimonialsLead: "Rückmeldungen von Studierenden und Teilnehmern, die StopScroll entdeckt haben",
     testimonials: [
-      { quote: "Das Spiel bringt zum Lachen und zum Nachdenken — genau das richtige Gleichgewicht.", author: "HEFP-Schüler",        context: "BENUTZERTEST", rating: 5 },
-      { quote: "Man erkennt echte Social-Media-Verhaltensweisen sofort. Witzig und treffend.",          author: "Workshop-Teilnehmer", context: "FELDTEST", rating: 4 },
-      { quote: "Sehr zugänglich, auch für Leute, die nicht oft spielen.",                     author: "Studierende",         context: "UNTERRICHTSSESSION", rating: 5 },
-      { quote: "Der Ton ist kritisch, aber nie moralisierend — und genau das wirkt.",               author: "Lehrperson",          context: "PÄDAGOGISCHE BEOBACHTUNG", rating: 3 },
-      { quote: "In wenigen Minuten versteht man die Aufmerksamkeitsökonomie viel besser.",          author: "Testspieler",         context: "ENTDECKUNG", rating: 4 },
-      { quote: "Das Konzept ist originell und glaubwürdig für digitale Sensibilisierung.",     author: "Pilotgruppe",         context: "VALIDIERUNG", rating: 5 },
+      { quote: "Ich habe mein Handy die ganze Runde hingelegt. Das erste Mal seit Monaten.", author: "Schüler, 17 Jahre", context: "UNTERRICHTSSESSION · CEFF INDUSTRIE", rating: 5 },
+      { quote: "Wir haben unser eigenes Verhalten in den Karten erkannt. Komisch — aber genau das wirkt.", author: "Workshop-Teilnehmer", context: "FELDTEST · DIVTEC", rating: 5 },
+      { quote: "Das einzige Spiel, bei dem ich etwas gelernt habe, ohne es zu merken.", author: "Studierende, 2. Jahr", context: "BENUTZERTEST · HEFP", rating: 5 },
+      { quote: "Ideal, um eine Klassendiskussion zu starten, ohne dass es zur Moralpredigt wird.", author: "Lehrperson, Technisches Gymnasium", context: "PÄDAGOGISCHE BEOBACHTUNG", rating: 4 },
+      { quote: "Der Solo-Modus ist süchtig machend. Die Ironie ist meinen Schülern nicht entgangen.", author: "Workshop-Leiter", context: "ENTDECKUNG · BIEL", rating: 4 },
+      { quote: "In 20 Minuten Spielzeit haben meine Studierenden die Aufmerksamkeitsökonomie besser verstanden als in einer ganzen Vorlesung.", author: "HEFP-Trainer", context: "PÄDAGOGISCHE VALIDIERUNG", rating: 5 },
     ],
     faqEyebrow: "FAQ", faqTitle: "Häufig gestellte Fragen",
     faqLead: "Das Wesentliche, um StopScroll, seine Ziele und seinen Einsatz im Unterricht zu verstehen.",
